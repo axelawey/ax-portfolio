@@ -123,8 +123,8 @@ function App() {
   }
 
   #vinyl a img {
-    width: 30px !important;
-    height: 30px !important;
+    width: 16px !important;
+    height: 16px !important;
   }
 
   footer {
