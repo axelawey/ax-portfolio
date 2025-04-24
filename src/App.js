@@ -104,7 +104,7 @@ function App() {
   }
 
   #vinyl img {
-    width: 90px !important;
+    width: 100px !important;
     height: 90px !important;
     border-radius: 0.4rem !important;
     margin: 0 auto 0.4rem auto !important;
