@@ -11,32 +11,76 @@ function App() {
 
     const style = document.createElement('style');
     style.innerHTML = `
-      html {
-        scroll-behavior: smooth;
-      }
+  html {
+    scroll-behavior: smooth;
+  }
 
-      @keyframes riseFade {
-        0% {
-          opacity: 0;
-          transform: translateY(40px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
+  @keyframes riseFade {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-      @media (max-width: 768px) {
-        h2 { font-size: 2rem !important; }
-        p { font-size: 1rem !important; }
-        nav ul { flex-direction: column !important; gap: 0.5rem !important; }
-        section { padding: 5rem 1rem !important; }
-        #home div img { width: 200px !important; height: 200px !important; }
-        #projects div[id^="project-card"] { width: 100% !important; }
-        #vinyl div { min-width: 200px !important; }
-        footer { font-size: 0.8rem !important; }
-      }
-    `;
+  @media (max-width: 768px) {
+    nav {
+      padding: 0.5rem 1rem !important;
+    }
+
+    nav h1 {
+      font-size: 0.85em !important;
+    }
+
+    nav ul {
+      flex-direction: column !important;
+      gap: 0.25rem !important;
+    }
+
+    h2 {
+      font-size: 1.5rem !important;
+    }
+
+    p {
+      font-size: 0.9rem !important;
+    }
+
+    section {
+      padding: 4rem 1rem !important;
+    }
+
+    #home div img {
+      width: 150px !important;
+      height: 150px !important;
+    }
+
+    #home a img {
+      width: 18px !important;
+      height: 18px !important;
+    }
+
+    #projects div[id^="project-card"] {
+      width: 100% !important;
+    }
+
+    #vinyl div {
+      min-width: 170px !important;
+    }
+
+    #vinyl img {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    footer {
+      font-size: 0.7rem !important;
+    }
+  }
+`;
+
     document.head.appendChild(style);
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
