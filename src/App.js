@@ -8,9 +8,6 @@ function App() {
   useEffect(() => {
     window.history.replaceState(null, '', window.location.pathname);
     window.scrollTo(0, 0);
-    if (window.innerWidth <= 768 && vinylRef.current) {
-      vinylRef.currrent.scrollLeft = 0;
-    }
 
     const style = document.createElement('style');
     style.innerHTML = `
