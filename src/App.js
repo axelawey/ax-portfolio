@@ -57,9 +57,8 @@ function App() {
     flex-direction: column !important;
     justify-content: center !important;
     padding-top: 6rem !important;
-    text-align: center !important;
     height: auto !important;
-    min-height: 100vh !important;
+    min-height: 80vh !important;
   }
 
   #home > div {
@@ -74,7 +73,6 @@ function App() {
   }
 
   #home p {
-    font-size: 0.95rem !important;
     min-height: 1.8rem !important;
   }
 
