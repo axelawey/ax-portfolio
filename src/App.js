@@ -27,58 +27,61 @@ function App() {
   }
 
   @media (max-width: 768px) {
-    nav {
-      padding: 0.5rem 1rem !important;
-    }
-
-    nav h1 {
-      font-size: 0.85em !important;
-    }
-
-    nav ul {
-      flex-direction: column !important;
-      gap: 0.25rem !important;
-    }
-
-    h2 {
-      font-size: 1.5rem !important;
-    }
-
-    p {
-      font-size: 0.9rem !important;
-    }
-
-    section {
-      padding: 4rem 1rem !important;
-    }
-
-    #home div img {
-      width: 150px !important;
-      height: 150px !important;
-    }
-
-    #home a img {
-      width: 18px !important;
-      height: 18px !important;
-    }
-
-    #projects div[id^="project-card"] {
-      width: 100% !important;
-    }
-
-    #vinyl div {
-      min-width: 170px !important;
-    }
-
-    #vinyl img {
-      width: 100% !important;
-      height: auto !important;
-    }
-
-    footer {
-      font-size: 0.7rem !important;
-    }
+  nav {
+    padding: 0.3rem 0.8rem !important;
   }
+
+  nav h1 {
+    font-size: 0.7em !important;
+  }
+
+  nav ul {
+    flex-direction: column !important;
+    gap: 0.2rem !important;
+  }
+
+  h2 {
+    font-size: 1.3rem !important;
+  }
+
+  p {
+    font-size: 0.85rem !important;
+  }
+
+  section {
+    padding: 3.5rem 1rem !important;
+  }
+
+  #home div img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  #home a img {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  #projects div[id^="project-card"] {
+    width: 100% !important;
+  }
+
+  #vinyl div {
+    min-width: 130px !important;
+    padding: 0.5rem !important;
+  }
+
+  #vinyl img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 6px !important;
+  }
+
+  footer {
+    font-size: 0.65rem !important;
+  }
+}
+
 `;
 
     document.head.appendChild(style);
