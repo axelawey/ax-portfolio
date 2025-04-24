@@ -104,8 +104,8 @@ function App() {
   }
 
   #vinyl img {
-    width: 60px !important;
-    height: 60px !important;
+    width: 80px !important;
+    height: 80px !important;
     border-radius: 0.4rem !important;
     margin: 0 auto 0.4rem auto !important;
     display: block;
@@ -123,8 +123,8 @@ function App() {
   }
 
   #vinyl a img {
-    width: 18px !important;
-    height: 18px !important;
+    width: 30px !important;
+    height: 30px !important;
   }
 
   footer {
