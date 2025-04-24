@@ -54,7 +54,7 @@ function App() {
 
   #home div img {
     width: 120px !important;
-    height: 120px !important;
+    height: 90px !important;
   }
 
   #home a img {
