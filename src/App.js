@@ -36,7 +36,7 @@ function App() {
   }
 
   nav ul {
-    flex-direction: column !important;
+    flex-direction: row !important;
     gap: 0.2rem !important;
   }
 
@@ -54,7 +54,7 @@ function App() {
 
   #home div img {
     width: 120px !important;
-    height: 90px !important;
+    height: 120px !important;
   }
 
   #home a img {
