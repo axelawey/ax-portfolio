@@ -112,13 +112,13 @@ function App() {
   }
 
   #vinyl h4 {
-    font-size: 0.75rem !important;
+    font-size: 0.30rem !important;
     text-align: center !important;
   }
 
   #vinyl p {
-    font-size: 0.65rem !important;
-    texxt-align: center !important;
+    font-size: 0.35rem !important;
+    text-align: center !important;
     color: #aaa !important;
   }
 
