@@ -112,7 +112,7 @@ function App() {
   }
 
   #vinyl h4 {
-    font-size: 0.30rem !important;
+    font-size: 0.45rem !important;
     text-align: center !important;
   }
 
