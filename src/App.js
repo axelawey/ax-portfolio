@@ -53,7 +53,7 @@ function App() {
   }
 
   #home div img {
-    width: 180px !important;
+    width: 120px !important;
     height: 120px !important;
   }
 
