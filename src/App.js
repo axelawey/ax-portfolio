@@ -75,7 +75,7 @@ function App() {
   #vinyl img {
     width: 50% !important;
     height: auto !important;
-    border-radius: 2px !important;
+    border-radius: 10px !important;
   }
 
   footer {
