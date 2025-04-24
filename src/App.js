@@ -73,7 +73,11 @@ function App() {
   }
 
   #home p {
+    font-size: 0.95rem !important;
     min-height: 1.8rem !important;
+    display: inline-block !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
   }
 
   #home div img {
