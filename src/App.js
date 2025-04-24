@@ -87,8 +87,8 @@ function App() {
   }
 
   #home a img {
-    width: 14px !important;
-    height: 14px !important;
+    width: 18px !important;
+    height: 18px !important;
     margin-top: 2rem !important;
     margin-bottom: 1rem !important;
   }
