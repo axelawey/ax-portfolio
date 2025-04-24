@@ -122,6 +122,11 @@ function App() {
     color: #aaa !important;
   }
 
+  #vinyl a img {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
   footer {
     font-size: 0.65rem !important;
   }
