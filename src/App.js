@@ -117,7 +117,7 @@ function App() {
   }
 
   #vinyl p {
-    font-size: 0.35rem !important;
+    font-size: 0.55rem !important;
     text-align: center !important;
     color: #aaa !important;
   }
