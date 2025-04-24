@@ -333,51 +333,51 @@ function App() {
           }, {
             title: 'Ella Fitzgerald - Stairway to the Stars',
             img: '/vinyl-covers/ELLA.jpg',
-            desc: '1939 | jazz '
+            desc: '1939 | jazz'
           }, {
             title: 'Billie Eillish - HIT ME HARD AND SOFT',
             img: '/vinyl-covers/HMAS.jpg',
-            desc: '2024 | alternative | favorite: CHIHIRO.'
+            desc: '2024 | alternative'
           }, {
             title: 'Kendrick Lamar - good kid, m.A.A.d city',
             img: '/vinyl-covers/GKMC.jpg',
-            desc: '2012 | hip-hop/rap | favorite: The Art of Peer Pressure'
+            desc: '2012 | hip-hop/rap'
           }, {
             title: 'Mac DeMarco - 2',
             img: "/vinyl-covers/MAC2.jpg",
-            desc: '2012 | alternative | favorite: Dreaming.'
+            desc: '2012 | alternative'
           }, {
             title: "Clairo - Charm",
             img: "/vinyl-covers/CHARM.jpg",
-            desc: '2024 | alternative | favorite: Second Nature.'
+            desc: '2024 | alternative'
           }, {
             title: "Faye Webster - Underdressed at the Symphony",
             img: "/vinyl-covers/SYMPHONY.jpg",
-            desc: "2024 | alternative | favorite: all"
+            desc: "2024 | alternative"
           }, {
             title: "Madvillain - Madvillainy",
             img:"/vinyl-covers/villain.jpg",
-            desc: "2003 | rap/boom bap | favorite: Figaro."
+            desc: "2003 | rap/boom bap"
           }, {
             title: "Doechii - Alligator Bites Never Heal",
             img: "/vinyl-covers/doechi.jpg",
-            desc: "2024 | hip-hop/rap | favorite: BULLFROG."
+            desc: "2024 | hip-hop/rap"
           }, {
             title: "Kali Uchis - Sincerely,",
             img: "/vinyl-covers/SINCERELY,.jpg",
-            desc: "2025 | pop | favorite: N/A"
+            desc: "2025 | pop"
           }, {
             title: "Eem Triplin - Melody of a Memory",
             img: "/vinyl-covers/MOAM.jpg",
-            desc: "2025 | alternative rap | favorite: Out Miami."
+            desc: "2025 | alternative rap"
           }, {
             title: "Tyler, The Creator - Cherry Bomb",
             img:"/vinyl-covers/cherry.jpg",
-            desc: "2015 | hip-hop/rap | favorite: F****** YOUNG/PERFECT."
+            desc: "2015 | hip-hop/rap"
           }, {
             title: "Faye Webster - I Know I'm Funny haha",
             img: "/vinyl-covers/haha.jpg",
-            desc: "2021 | alternative | favorite: Sometimes. "
+            desc: "2021 | alternative"
           }
         ].map((vinyl, index) => (
             <div key={index} style={{ backgroundColor: '#1a1a1a', padding: '1rem', borderRadius: '1rem', minWidth: '250px', flex: '0 0 auto' }}>
