@@ -6,3 +6,7 @@ body{
     color: #fff;
     scroll-behavior: smooth;
 }
+
+html{
+    scroll-behavior: smooth;
+}
