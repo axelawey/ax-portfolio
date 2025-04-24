@@ -37,7 +37,7 @@ function App() {
 
   nav ul {
     flex-direction: row !important;
-    gap: 0.2rem !important;
+    gap: 0.8rem !important;
   }
 
   h2 {
