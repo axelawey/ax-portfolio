@@ -72,7 +72,7 @@ function App() {
   }
 
   #vinyl img {
-    width: 100% !important;
+    width: 60% !important;
     height: auto !important;
     border-radius: 6px !important;
   }
