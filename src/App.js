@@ -99,13 +99,27 @@ function App() {
 
   #vinyl div {
     min-width: 130px !important;
-    padding: 0.5rem !important;
+    padding: 0.3rem !important;
+    border-radius: 0.5rem !important;
   }
 
   #vinyl img {
-    width: 50% !important;
-    height: auto !important;
-    border-radius: 6px !important;
+    width: 90px !important;
+    height: 90px !important;
+    border-radius: 0.4rem !important;
+    margin: 0 auto 0.4rem auto !important;
+    display: block;
+  }
+
+  #vinyl h4 {
+    font-size: 0.65rem !important;
+    text-align: center !important;
+  }
+
+  #vinyl p {
+    font-size: 0.65rem !important;
+    texxt-align: center !important;
+    color: #aaa !important;
   }
 
   footer {
