@@ -317,19 +317,19 @@ function App() {
           {[{
             title: 'Kendrick Lamar - DAMN.',
             img: '/vinyl-covers/DAMN.jpg',
-            desc: '2017 | hip-hop/rap | favorite: YAH.'
+            desc: '2017 | hip-hop/rap'
           }, {
             title: 'Tyler, The Creator - IGOR',
             img: '/vinyl-covers/IGOR.jpg',
-            desc: '2019 | experimental | favorite: PUPPET.'
+            desc: '2019 | experimental'
           }, {
             title: 'Tyler, The Creator - WOLF',
             img: '/vinyl-covers/WOLF.jpg',
-            desc: '2013 | hip-hop/alternative | favorite: Lone.'
+            desc: '2013 | hip-hop/alternative'
           }, {
             title: 'Tyler, The Creator - Call Me If You Get Lost',
             img: '/vinyl-covers/CMIYGL.jpg',
-            desc: '2021 | hip-hop/rap | favorite: WHAT A DAY.'
+            desc: '2021 | hip-hop/rap'
           }, {
             title: 'Ella Fitzgerald - Stairway to the Stars',
             img: '/vinyl-covers/ELLA.jpg',
