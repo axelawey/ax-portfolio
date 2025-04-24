@@ -104,20 +104,20 @@ function App() {
   }
 
   #vinyl img {
-    width: 80px !important;
-    height: 80px !important;
+    width: 60px !important;
+    height: 60px !important;
     border-radius: 0.4rem !important;
     margin: 0 auto 0.4rem auto !important;
     display: block;
   }
 
   #vinyl h4 {
-    font-size: 0.45rem !important;
+    font-size: 0.30rem !important;
     text-align: center !important;
   }
 
   #vinyl p {
-    font-size: 0.55rem !important;
+    font-size: 0.45rem !important;
     text-align: center !important;
     color: #aaa !important;
   }
