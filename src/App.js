@@ -53,14 +53,33 @@ function App() {
     padding: 3.5rem 1rem !important;
   }
 
+  #home {
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding-top: 3rem !important;
+    text-align: center !important;
+  }
+
+  #home h2 {
+    font-size: 1.5rem !important;
+    white-space: nowrap !important;
+  }
+
+  #home p {
+    font-size: 0.95rem !important;
+    min-height: 1.6rem !important;
+  }
+
   #home div img {
     width: 120px !important;
     height: 120px !important;
+    margin-top: 1.2rem !important;
   }
 
   #home a img {
     width: 14px !important;
     height: 14px !important;
+    margin-top: 1.5rem !important;
   }
 
   #projects div[id^="project-card"] {
@@ -82,7 +101,6 @@ function App() {
     font-size: 0.65rem !important;
   }
 }
-
 `;
 
     document.head.appendChild(style);
