@@ -58,7 +58,7 @@ function App() {
     justify-content: center !important;
     padding-top: 6rem !important;
     height: auto !important;
-    min-height: 80vh !important;
+    min-height: 60vh !important;
   }
 
   #home > div {
