@@ -32,12 +32,13 @@ function App() {
   }
 
   nav h1 {
-    font-size: 0.7em !important;
+    font-size: 0.6em !important;
   }
 
   nav ul {
     flex-direction: row !important;
     gap: 0.8rem !important;
+    font-size: 0.6rem !important;
   }
 
   h2 {
@@ -72,7 +73,7 @@ function App() {
   }
 
   #vinyl img {
-    width: 60% !important;
+    width: 50% !important;
     height: auto !important;
     border-radius: 6px !important;
   }
