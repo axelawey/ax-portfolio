@@ -68,14 +68,14 @@ function App() {
   }
 
   #vinyl div {
-    min-width: 130px !important;
-    padding: 0.5rem !important;
+    min-width: 90px !important;
+    padding: 0.2rem !important;
   }
 
   #vinyl img {
     width: 50% !important;
     height: auto !important;
-    border-radius: 10px !important;
+    border-radius: 6px !important;
   }
 
   footer {
