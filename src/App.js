@@ -73,8 +73,8 @@ function App() {
   }
 
   #home p {
-    font-size: 0.95rem !important;
-    min-height: 2.5rem !important;
+    font-size: 0.5rem !important;
+    min-height: 4rem !important;
     display: inline-block !important;
     white-space: nowrap !important;
     overflow: hidden !important;
