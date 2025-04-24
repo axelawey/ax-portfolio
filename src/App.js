@@ -104,15 +104,15 @@ function App() {
   }
 
   #vinyl img {
-    width: 100px !important;
-    height: 90px !important;
+    width: 80px !important;
+    height: 80px !important;
     border-radius: 0.4rem !important;
     margin: 0 auto 0.4rem auto !important;
     display: block;
   }
 
   #vinyl h4 {
-    font-size: 0.65rem !important;
+    font-size: 0.75rem !important;
     text-align: center !important;
   }
 
