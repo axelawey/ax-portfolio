@@ -56,8 +56,16 @@ function App() {
   #home {
     flex-direction: column !important;
     justify-content: center !important;
-    padding-top: 3rem !important;
+    padding-top: 6rem !important;
     text-align: center !important;
+    height: auto !important;
+    min-height: 100vh !important;
+  }
+
+  #home > div {
+    flex-direction: column 1important;
+    gap: 1.5rem !important;
+    align-items: center;
   }
 
   #home h2 {
@@ -67,7 +75,7 @@ function App() {
 
   #home p {
     font-size: 0.95rem !important;
-    min-height: 1.6rem !important;
+    min-height: 1.8rem !important;
   }
 
   #home div img {
@@ -79,7 +87,8 @@ function App() {
   #home a img {
     width: 14px !important;
     height: 14px !important;
-    margin-top: 1.5rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
   }
 
   #projects div[id^="project-card"] {
