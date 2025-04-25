@@ -9,6 +9,10 @@ function App() {
     window.history.replaceState(null, '', window.location.pathname);
     window.scrollTo(0, 0);
 
+    if(vinylRef.current) {
+      vinylRef.current.scrollLeft = 0;
+    }
+
     const style = document.createElement('style');
     style.innerHTML = `
   html {
@@ -170,6 +174,7 @@ function App() {
       stopScroll();
       container?.removeEventListener('mouseenter', stopScroll);
       container?.removeEventListener('mouseleave', startScroll);
+      container?.scrollTo({ left: 0 });
     };
   }, []);
 
