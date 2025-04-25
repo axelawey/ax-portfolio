@@ -98,7 +98,7 @@ function App() {
   }
 
   #projects div[id^="project-card"] {
-    width: 100% !important;
+    width: 80% !important;
   }
 
   #vinyl div {
