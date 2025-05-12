@@ -256,7 +256,7 @@ function App() {
 
           <div id="project-card-2" style={{ backgroundColor: '#1a1a1a', padding: '1rem', borderRadius: '1rem', width: '300px' }}>
             <h3 style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>cryptvault.</h3>
-            <p style={{ color: '#aaa' }}>an application that gives users the ability to encrypt and decryot messages using various cryptographic algorithms.</p>
+            <p style={{ color: '#aaa' }}>an application that gives users the ability to encrypt and decrypt messages using various cryptographic algorithms.</p>
             <a href="https://cryptvault-web-app.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img src="/assests/icons8-right-arrow-30.png" alt="Project Link" style={{ width: '20px', height: '20px', marginTop: '1rem' }} />
             </a>
