@@ -220,7 +220,7 @@ function App() {
             </p>
           </div>
           <div style={{ animation: 'riseFade 1.2s ease-out forwards', opacity: 0 }}>
-            <img src="/vinyl-covers/newppic.jpg" alt="axelppic" style={{ width: '300px', height: '300px', borderRadius: '50%', objectFit: 'cover', border: '3px solid #fff' }} />
+            <img src="/assests/ax.jpeg" alt="axelppic" style={{ width: '300px', height: '300px', borderRadius: '50%', objectFit: 'cover', border: '3px solid #fff' }} />
           </div>
         </div>
         <div style={{ position: 'absolute', bottom: '2rem', left: '50%', transform: 'translateX(-50%)' }}>
