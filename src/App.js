@@ -9,10 +9,6 @@ function App() {
     window.history.replaceState(null, '', window.location.pathname);
     window.scrollTo(0, 0);
 
-    if(vinylRef.current) {
-      vinylRef.current.scrollLeft = 0;
-    }
-
     const style = document.createElement('style');
     style.innerHTML = `
   html {
@@ -61,14 +57,8 @@ function App() {
     flex-direction: column !important;
     justify-content: center !important;
     padding-top: 6rem !important;
-    height: auto !important;
-    min-height: 65vh !important;
-  }
-
-  #home > div {
-    flex-direction: column 1important;
-    gap: 1.5rem !important;
-    align-items: center;
+    text-align: center !important;
+    min-height:100vh !important;
   }
 
   #home h2 {
@@ -77,11 +67,8 @@ function App() {
   }
 
   #home p {
-    font-size: 0.75rem !important;
-    min-height: 4rem !important;
-    display: inline-block !important;
-    white-space: nowrap !important;
-    overflow: hidden !important;
+    font-size: 0.95rem !important;
+    min-height: 1.8rem !important;
   }
 
   #home div img {
@@ -91,44 +78,25 @@ function App() {
   }
 
   #home a img {
-    width: 18px !important;
-    height: 18px !important;
+    width: 14px !important;
+    height: 14px !important;
     margin-top: 2rem !important;
     margin-bottom: 1rem !important;
   }
 
   #projects div[id^="project-card"] {
-    width: 80% !important;
+    width: 100% !important;
   }
 
   #vinyl div {
     min-width: 130px !important;
-    padding: 0.3rem !important;
-    border-radius: 0.5rem !important;
+    padding: 0.5rem !important;
   }
 
   #vinyl img {
-    width: 80px !important;
-    height: 80px !important;
-    border-radius: 0.4rem !important;
-    margin: 0 auto 0.4rem auto !important;
-    display: block;
-  }
-
-  #vinyl h4 {
-    font-size: 0.55rem !important;
-    text-align: center !important;
-  }
-
-  #vinyl p {
-    font-size: 0.70rem !important;
-    text-align: center !important;
-    color: #aaa !important;
-  }
-
-  #vinyl a img {
-    width: 16px !important;
-    height: 16px !important;
+    width: 50% !important;
+    height: auto !important;
+    border-radius: 6px !important;
   }
 
   footer {
@@ -174,7 +142,6 @@ function App() {
       stopScroll();
       container?.removeEventListener('mouseenter', stopScroll);
       container?.removeEventListener('mouseleave', startScroll);
-      container?.scrollTo({ left: 0 });
     };
   }, []);
 
@@ -189,19 +156,19 @@ function App() {
       maxWidth: '100%',
       msOverflowX: 'hidden'
     }}>
-      {/* nav */}
       <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '1rem 2rem', position: 'fixed', top: 0, left: 0, right: 0, backgroundColor: '#000', zIndex: 1000, boxShadow: '0 2px 10px rgba(0,0,0,0.7)' }}>
         <a href="#home" style={{ color: '#fff', textDecoration: 'none' }}>
           <h1 style={{ fontSize: '1.0em', fontWeight: 'bold' }}>[axel.]</h1>
         </a>
         <ul style={{ display: 'flex', gap: '1.5rem', listStyle: 'none' }}>
+          <li><a href='#certs' style={{color: '#ccc', textDecoration: 'none'}}> certs</a></li>
           <li><a href="#projects" style={{ color: '#ccc', textDecoration: 'none' }}>my work</a></li>
           <li><a href="#vinyl" style={{ color: '#ccc', textDecoration: 'none' }}>vinyls</a></li>
           <li><a href="#contact" style={{ color: '#ccc', textDecoration: 'none' }}>contact</a></li>
         </ul>
       </nav>
 
-      {/* home */}
+
       <section id="home" style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '0 2rem', position: 'relative' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '4rem', alignItems: 'center' }}>
           <div style={{ maxWidth: '600px', textAlign: 'left', animation: 'riseFade 1s ease-out forwards', opacity: 0 }}>
@@ -209,7 +176,7 @@ function App() {
             <p style={{ fontSize: '1.25rem', marginTop: '1rem' }}>
               i'm a{' '}
               <Typewriter
-                words={["nerd", "cloud enthusiast.", "engineer/developer.", "vinyl collector.", "gamer."]}
+                words={["nerd.", "cloud enthusiast.", "2x aws certified engineer", "chelsea fan.", "lions fan.", "celtics fan.", "vinyl collector & audiophile.", "gamer."]}
                 loop={true}
                 cursor
                 cursorStyle='|'
@@ -224,9 +191,34 @@ function App() {
           </div>
         </div>
         <div style={{ position: 'absolute', bottom: '2rem', left: '50%', transform: 'translateX(-50%)' }}>
-          <a href="#projects">
+          <a href="#certs">
             <img src="/assests/icons8-sort-down-30.png" alt="Scroll Down" style={{ width: '30px', height: '30px' }} />
           </a>
+        </div>
+      </section>
+
+      {/*certs*/}
+      <section id="certs" style={{padding: '8rem 2rem 6rem', minHeight: '50vh'}}>
+        <div style={{display: "flex", alignItems: 'center', gap: '1rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
+          <h2 style={{fontSize : '2rem', fontWeight: 'bold', margin: 0}}>certifications</h2>
+        </div>
+        <div style={{display: 'flex', flexWrap: 'wrap', gap: '2rem'}}>
+          <div id='cert-card1' style={{backgroundColor: '#1a1a1a', padding: '1rem', borderRadius: '1rem', width: '300px' }}>
+            <h3 style={{fontSize: '1.25 rem', fontWeight: 'bold'}}>AWS Certified Solutions Architect - Associate.</h3>
+            <a href='https://www.credly.com/badges/3605c2ca-a2e6-4c12-b167-dae5e2028361/public_url' target='blank' rel='noopener noreferrer'>
+            <img src='/assests/icons8-right-arrow-30.png' alt='cert-link' style={{width: '20px', height: '20px', marginTop: '1rem'}} />
+            </a>
+          </div>
+
+          <div style={{display: 'flex', flexWrap: 'wrap', gap: '2rem'}}>
+            <div id='cert-card2' style={{backgroundColor: '#1a1a1a', padding: '1rem', borderRadius: '1rem', width: '300px'}}>
+                <h3 style={{fontSize: '1.25rem', fontWeight: 'bold'}}> AWS Certified AI  Practioner</h3>
+                <a href='https://www.credly.com/badges/ee00a835-6c3d-44bc-9981-a4675f76b75d/public_url' target='blank' rel='noopener noreferrer'>
+                <img src='/assests/icons8-right-arrow-30.png' alt='cert-link' style={{width: '20px', height: '20px', marginTop: '1rem'}} />
+                </a>
+            </div>
+
+          </div>
         </div>
       </section>
 
@@ -236,7 +228,7 @@ function App() {
           <h2 style={{ fontSize: '2rem', fontWeight: 'bold', margin: 0 }}>my work.</h2>
           <span style={{ fontSize: '1rem', color: '#aaa', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             [my resume →
-            <a href="/assests/Awey, Axel Resume.pdf" target="_blank" rel="noopener noreferrer" style={{ border: '1px solid #fff', color: '#fff', padding: '0.25rem 0.75rem', borderRadius: '5px', textDecoration: 'none', fontSize: '0.9rem', transition: 'all 0.3s ease' }}
+            <a href="/assests/axel's resume.pdf" target="_blank" rel="noopener noreferrer" style={{ border: '1px solid #fff', color: '#fff', padding: '0.25rem 0.75rem', borderRadius: '5px', textDecoration: 'none', fontSize: '0.9rem', transition: 'all 0.3s ease' }}
               onMouseEnter={e => { e.target.style.backgroundColor = '#fff'; e.target.style.color = '#000'; }}
               onMouseLeave={e => { e.target.style.backgroundColor = 'transparent'; e.target.style.color = '#fff'; }}>
               download resume
@@ -247,16 +239,16 @@ function App() {
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem' }}>
           <div id="project-card-1" style={{ backgroundColor: '#1a1a1a', padding: '1rem', borderRadius: '1rem', width: '300px' }}>
-            <h3 style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>RandPass Gen.</h3>
-            <p style={{ color: '#aaa' }}>a python based Random Password Generator. it generates strong passwords with customizable length and character sets.</p>
-            <a href="https://rand-pass-app.vercel.app/" target="_blank" rel="noopener noreferrer">
+            <h3 style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>aws transit gateway setup & flow log analysis</h3>
+            <p style={{ color: '#aaa' }}>Developed a multi-region Transit Gateway architecture with flow logs for VPCs and Transit Gateway.</p>
+            <a href='/assests/AWS Transit Gateway Setup & Analysis Documentation - Axel Awey.pdf' target="_blank" rel="noopener noreferrer">
               <img src="/assests/icons8-right-arrow-30.png" alt="Project Link" style={{ width: '20px', height: '20px', marginTop: '1rem' }} />
             </a>
           </div>
 
           <div id="project-card-2" style={{ backgroundColor: '#1a1a1a', padding: '1rem', borderRadius: '1rem', width: '300px' }}>
             <h3 style={{ fontSize: '1.25rem', fontWeight: 'bold' }}>cryptvault.</h3>
-            <p style={{ color: '#aaa' }}>an application that gives users the ability to encrypt and decrypt messages using various cryptographic algorithms.</p>
+            <p style={{ color: '#aaa' }}>an application that gives users the ability to encrypt and decryot messages using various cryptographic algorithms.</p>
             <a href="https://cryptvault-web-app.vercel.app/" target="_blank" rel="noopener noreferrer">
               <img src="/assests/icons8-right-arrow-30.png" alt="Project Link" style={{ width: '20px', height: '20px', marginTop: '1rem' }} />
             </a>
@@ -322,67 +314,67 @@ function App() {
           {[{
             title: 'Kendrick Lamar - DAMN.',
             img: '/vinyl-covers/DAMN.jpg',
-            desc: '2017 | hip-hop/rap'
+            desc: '2017 | hip-hop/rap | favorite: YAH.'
           }, {
             title: 'Tyler, The Creator - IGOR',
             img: '/vinyl-covers/IGOR.jpg',
-            desc: '2019 | experimental'
+            desc: '2019 | experimental | favorite: PUPPET.'
           }, {
             title: 'Tyler, The Creator - WOLF',
             img: '/vinyl-covers/WOLF.jpg',
-            desc: '2013 | hip-hop/alternative'
+            desc: '2013 | hip-hop/alternative | favorite: Lone.'
           }, {
             title: 'Tyler, The Creator - Call Me If You Get Lost',
             img: '/vinyl-covers/CMIYGL.jpg',
-            desc: '2021 | hip-hop/rap'
+            desc: '2021 | hip-hop/rap | favorite: WHAT A DAY.'
           }, {
             title: 'Ella Fitzgerald - Stairway to the Stars',
             img: '/vinyl-covers/ELLA.jpg',
-            desc: '1939 | jazz'
+            desc: '1939 | jazz '
           }, {
             title: 'Billie Eillish - HIT ME HARD AND SOFT',
             img: '/vinyl-covers/HMAS.jpg',
-            desc: '2024 | alternative'
+            desc: '2024 | alternative | favorite: CHIHIRO.'
           }, {
             title: 'Kendrick Lamar - good kid, m.A.A.d city',
             img: '/vinyl-covers/GKMC.jpg',
-            desc: '2012 | hip-hop/rap'
+            desc: '2012 | hip-hop/rap | favorite: The Art of Peer Pressure'
           }, {
             title: 'Mac DeMarco - 2',
             img: "/vinyl-covers/MAC2.jpg",
-            desc: '2012 | alternative'
+            desc: '2012 | alternative | favorite: Dreaming.'
           }, {
             title: "Clairo - Charm",
             img: "/vinyl-covers/CHARM.jpg",
-            desc: '2024 | alternative'
+            desc: '2024 | alternative | favorite: Second Nature.'
           }, {
             title: "Faye Webster - Underdressed at the Symphony",
             img: "/vinyl-covers/SYMPHONY.jpg",
-            desc: "2024 | alternative"
+            desc: "2024 | alternative | favorite: all"
           }, {
             title: "Madvillain - Madvillainy",
             img:"/vinyl-covers/villain.jpg",
-            desc: "2003 | rap/boom bap"
+            desc: "2003 | rap/boom bap | favorite: Figaro."
           }, {
             title: "Doechii - Alligator Bites Never Heal",
             img: "/vinyl-covers/doechi.jpg",
-            desc: "2024 | hip-hop/rap"
+            desc: "2024 | hip-hop/rap | favorite: BULLFROG."
           }, {
             title: "Kali Uchis - Sincerely,",
             img: "/vinyl-covers/SINCERELY,.jpg",
-            desc: "2025 | pop"
+            desc: "2025 | pop | favorite: N/A"
           }, {
             title: "Eem Triplin - Melody of a Memory",
             img: "/vinyl-covers/MOAM.jpg",
-            desc: "2025 | alternative rap"
+            desc: "2025 | alternative rap | favorite: Out Miami."
           }, {
             title: "Tyler, The Creator - Cherry Bomb",
             img:"/vinyl-covers/cherry.jpg",
-            desc: "2015 | hip-hop/rap"
+            desc: "2015 | hip-hop/rap | favorite: F****** YOUNG/PERFECT."
           }, {
             title: "Faye Webster - I Know I'm Funny haha",
             img: "/vinyl-covers/haha.jpg",
-            desc: "2021 | alternative"
+            desc: "2021 | alternative | favorite: Sometimes. "
           }
         ].map((vinyl, index) => (
             <div key={index} style={{ backgroundColor: '#1a1a1a', padding: '1rem', borderRadius: '1rem', minWidth: '250px', flex: '0 0 auto' }}>
