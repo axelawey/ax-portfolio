@@ -176,7 +176,7 @@ function App() {
             <p style={{ fontSize: '1.25rem', marginTop: '1rem' }}>
               i'm a{' '}
               <Typewriter
-                words={["nerd.", "cloud enthusiast.", "2x aws certified engineer", "chelsea fan.", "lions fan.", "celtics fan.", "vinyl collector & audiophile.", "gamer."]}
+                words={["nerd.", "cloud enthusiast.", "chelsea fan.", "lions fan.", "celtics fan.", "vinyl collector.", "gamer."]}
                 loop={true}
                 cursor
                 cursorStyle='|'
