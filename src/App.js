@@ -91,13 +91,13 @@ function App() {
   #vinyl div {
     min-width: unset !important;
     width: 100%;
-    padding: 0.75rem !important;
+    padding: 0.5rem !important;
   }
 
   #vinyl img {
     width: 100% !important;
     height: auto !important;
-    border-radius: 8px !important;
+    border-radius: 6px !important;
   }
 
   footer {
