@@ -89,13 +89,12 @@ function App() {
   }
 
   #vinyl div {
-    min-width: 140px !important;
-    max-width: 160px !important
+    min-width: 130px !important;
     padding: 0.5rem !important;
   }
 
   #vinyl img {
-    width: 100% !important;
+    width: 50% !important;
     height: auto !important;
     border-radius: 6px !important;
   }
