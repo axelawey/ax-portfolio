@@ -89,7 +89,7 @@ function App() {
   }
 
   #vinyl div {
-    min-width: 130px !important;
+    min-width: 90px !important;
     padding: 0.5rem !important;
   }
 
